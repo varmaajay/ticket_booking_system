@@ -1,0 +1,177 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>BUS TICKET BOOKING</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        h2 {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .details {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .container {
+            /* border: 2px solid black; */
+            width: 500px;
+        }
+
+        .select {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .seat_no {
+            display: flex;
+            margin: 20px 0px;
+
+        }
+
+        .seat_no label {
+            /* border: 2px solid black; */
+            width: 60px;
+
+        }
+
+        .seat_no input {
+            width: 100px;
+        }
+
+        .info {
+            display: flex;
+            justify-content: space-between;
+        }
+        .traveling{
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>BUS TICKET BOOKING</h2>
+        <form action="" method="post" >
+            <h3>PASSENGER DETAILS:</h3>
+            <div class="details">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" class="form-control" id="text" placeholder="Enter the name" name="name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="number">Number:</label>
+                <input type="number" class="form-control" id="number" placeholder="Enter number" name="number">
+            </div>
+            <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+            </div>
+            
+            <div class="traveling">
+                <h3>TRAVELING INFORMATION:</h3>
+                <div class="form-group">
+                    <div class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <label for="exampleFormControlSelect1">LOCATION</label>
+                    </div>
+                    <div class="select">
+                        <label for="">FROM:</label>
+                        <select class="form-control" id="exampleFormControlSelect1" name="from">
+                            <option value=""></option>
+                            <option>Ahmedabad</option>
+                            <option>Surat</option>
+                            <option>Jaypuar</option>
+                            <option>Kanpur</option>
+                            <option>Rajkot</option>
+                        </select>
+                        <label for="">TO:</label>
+                        <select class="form-control" id="exampleFormControlSelect1" name="to">
+                            <option value=""></option>
+                            <option>Ahmedabad</option>
+                            <option>Surat</option>
+                            <option>Jaypuar</option>
+                            <option>Kanpur</option>
+                            <option>Rajkot</option>
+                        </select>
+                    </div>
+                    <div class="time">
+                        <label for="appt">Your Ticket Time:</label>
+                        <input type="time" id="appt" name="time"  required />
+                    </div>
+                    <div class="form-group">
+                        <div class="info">
+                            <div class="seat_no">
+                                <label for="name">Seat No:</label>
+                                <input type="text" class="form-control" id="text" name="seat_no">
+                            </div>
+
+                            <div class="seat_no">
+                                <label for="name"> Price:</label>
+                                <input type="number" class="form-control" id="text" name="price">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="details">
+                        <div class="form-group">
+                            <label for="">Ticket No:</label>
+                            <input type="number" class="form-control" id="number" name="ticket_no">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Bus No:</label>
+                            <input type="number" class="form-control" id="number" name="Bus_no">
+                        </div>
+                    </div>
+                    <div class="location">
+                       <label for="exampleFormControlSelect1">TICKET TIME PERIOD:</label>
+                       
+                    </div>
+                    <div class="info">
+                        <div class="seat_no">
+                            <label for="name">START:</label>
+                            <input type="time" id="appt" name="start"  required />
+                        </div>
+                         
+                        <div class="seat_no">
+                            <label for="name">END:</label>
+                            <input type="time" id="appt" name="end" required />
+                        </div>
+                        
+                    </div>
+                </div>
+
+
+            </div>
+             <div class="checkbox">
+                <label><input type="checkbox" name="remember"> Confirm check information</label>
+            </div> 
+            <a href="/list"><button type="submit" class="btn btn-primary" name="submit">Submit</button></a>
+        </form>
+    </div>
+  
+</body>
+
+
+
+
+</html>
