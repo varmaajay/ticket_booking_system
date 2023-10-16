@@ -1,6 +1,3 @@
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -56,7 +53,8 @@
             display: flex;
             justify-content: space-between;
         }
-        .traveling{
+
+        .traveling {
             margin-top: 40px;
         }
     </style>
@@ -66,18 +64,21 @@
 
     <div class="container">
         <h2>BUS TICKET BOOKING</h2>
-        <form action="" method="post" >
+        <form method="post" enctype="multipart/form-data">
             <h3>PASSENGER DETAILS:</h3>
             <div class="details">
                 <div class="form-group">
                     <label for="name">Full Name:</label>
                     <input type="text" class="form-control" id="text" placeholder="Enter the name" name="name">
                 </div>
+                
                 <div class="form-group">
                     <label for="email">Email:</label>
                     <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
                 </div>
             </div>
+            <label class="form-label" for="customFile">UPLOADE IMAGE</label>
+            <input type="file" class="form-control" id="customFile" name= "photo"/>
             <div class="form-group">
                 <label for="number">Number:</label>
                 <input type="number" class="form-control" id="number" placeholder="Enter number" name="number">
@@ -86,7 +87,7 @@
                 <label for="pwd">Password:</label>
                 <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
             </div>
-            
+
             <div class="traveling">
                 <h3>TRAVELING INFORMATION:</h3>
                 <div class="form-group">
@@ -109,14 +110,14 @@
                             <option value=""></option>
                             <option>Ahmedabad</option>
                             <option>Surat</option>
-                            <option>Jaypuar</option>
+                            <option>Jaipuar</option>
                             <option>Kanpur</option>
                             <option>Rajkot</option>
                         </select>
                     </div>
                     <div class="time">
                         <label for="appt">Your Ticket Time:</label>
-                        <input type="time" id="appt" name="time"  required />
+                        <input type="time" id="appt" name="time" required />
                     </div>
                     <div class="form-group">
                         <div class="info">
@@ -143,32 +144,32 @@
                         </div>
                     </div>
                     <div class="location">
-                       <label for="exampleFormControlSelect1">TICKET TIME PERIOD:</label>
-                       
+                        <label for="exampleFormControlSelect1">TICKET TIME PERIOD:</label>
+
                     </div>
                     <div class="info">
                         <div class="seat_no">
                             <label for="name">START:</label>
-                            <input type="time" id="appt" name="start"  required />
+                            <input type="time" id="appt" name="start" required />
                         </div>
-                         
+
                         <div class="seat_no">
                             <label for="name">END:</label>
                             <input type="time" id="appt" name="end" required />
                         </div>
-                        
+
                     </div>
                 </div>
 
 
             </div>
-             <div class="checkbox">
+            <div class="checkbox">
                 <label><input type="checkbox" name="remember"> Confirm check information</label>
-            </div> 
+            </div>
             <a href="/list"><button type="submit" class="btn btn-primary" name="submit">Submit</button></a>
         </form>
     </div>
-  
+
 </body>
 
 

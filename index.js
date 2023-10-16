@@ -14,6 +14,8 @@ mongoose.connect('mongodb://127.0.0.1:27017/admin_panel', {
 });
 app.use(bodyparser.urlencoded({ extended: true }))
 app.use(bodyparser.json())
+
+  app.use(express.static("upload"))
 // app.get('/', function(req,res){
 //     res.send("hello word")
 // })

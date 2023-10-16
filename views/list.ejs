@@ -38,7 +38,7 @@
     <table class="table table-striped">
       <thead>
         <tr>
-          <th scope="col">Passanger_id</th>
+          <th scope="col">passenger_image</th>
           <th scope="col">Name</th>
           <th scope="col">Email</th>
           <th scope="col">Phone_No</th>
@@ -48,7 +48,8 @@
       <tbody>
         <% passenger.forEach(function(man) { %>
           <tr>
-            <td><%- man.id %></td>
+            <!-- <td><%- man.id %></td> -->
+            <td> <img src="<%- man.image%>" class="img-thubnail" width="50px" ></td>
             <td><%- man.name%></td>
             <td><%- man.email%></td>
             <td><%- man.phone_No%></td>
@@ -64,7 +65,7 @@
     <table class="table table-striped">
       <thead>
         <tr>
-          <th scope="col">Travel_ID</th>
+          <!-- <th scope="col">Travel_ID</th> -->
           <th scope="col">PASSENGER_NAME</th>
           <th scope="col">FROM</th>
           <th scope="col">TO</th>
@@ -80,8 +81,8 @@
       <tbody>
         <% data.forEach(function (user) { %>
           <tr>
-            <td><%- user._id %></td>
-            <!-- <td> <%-// user.passengerData[0].name %> </td> -->
+            <!-- <td><%- user._id %></td> -->
+            <td> <%- user.passengerData[0].name %> </td>
             <td><%- user.from %></td>
             <td><%- user.To %></td>
             <td><%- user.seat_No %></td>

@@ -11,6 +11,10 @@ const passengerSchema = new mongoose.Schema({
         type: String,
         // require: true
     },
+    image:{
+        type:String,
+        require:true
+    },
     phone_No: {
         type: Number,
         // require: true
